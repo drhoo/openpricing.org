@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Pricing — Fairness You Can See</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #666666;
+      --accent: #0c7ac9;
+      --border: #e9eef3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    header.hero {
+      position: relative;
+      width: 100%;
+      min-height: 56vh;
+      display: grid;
+      place-items: center;
+      background: #eef5fb;
+      overflow: hidden;
+    }
+    header.hero .image-wrap {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+    header.hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(1.05) contrast(1.02) brightness(1.02);
+      transform: scale(1.02);
+    }
+    header.hero .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.35) 100%);
+      mix-blend-mode: multiply;
+    }
+    header.hero .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 6rem 1.25rem 4rem;
+      color: #fff;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header.hero h1 {
+      margin: 0 0 .5rem 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.02em;
+    }
+    header.hero p.lede {
+      margin: 0 auto;
+      max-width: 54ch;
+      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+      opacity: .95;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+    }
+    time.badge {
+      display: inline-block;
+      font-size: .9rem;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      background: #fbfdff;
+      border-radius: 999px;
+      padding: .25rem .75rem;
+      margin-bottom: 1rem;
+    }
+    h2 { margin-top: 2rem; letter-spacing: -0.01em; }
+    p { margin: .6rem 0 0 0; }
+    ul { margin: .4rem 0 0 1.1rem; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.25rem;
+      text-align: center;
+      color: var(--muted);
+      background: #fcfeff;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="hero" role="banner" aria-label="Open Pricing hero">
+    <div class="image-wrap">
+      <img src="/mnt/data/A_high-resolution_digital_photograph_features_a_yo.png" alt="Smiling shopper in a bright supermarket checking a price on her phone">
+    </div>
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="content">
+      <h1>Open Pricing</h1>
+      <p class="lede">Fairness you can see.</p>
+    </div>
+  </header>
+
+  <main role="main">
+    <time class="badge" datetime="2025-10-01">October 1, 2025</time>
+    <h2>What is Open Pricing?</h2>
+    <p>Dynamic pricing is already part of everyday life. Too often, it’s hidden — prices rise and fall without explanation, leaving people feeling tricked rather than respected.</p>
+    <p><strong>Open Pricing</strong> is a different approach. It makes the signals behind price changes visible, so buyers and sellers can both see what’s happening, and why.</p>
+    <p>This is the starting point of a project to explore dynamic pricing that builds trust instead of eroding it.</p>
+
+    <h2>Why it matters</h2>
+    <ul>
+      <li><strong>Fairer trading</strong> — same price for everyone, at the same moment.</li>
+      <li><strong>Confidence</strong> — customers can decide with fuller information.</li>
+      <li><strong>Efficiency</strong> — retailers can match supply and demand without waste.</li>
+    </ul>
+
+    <h2>Principle</h2>
+    <p>Open Pricing is guided by a simple belief: <em>fairness should be visible</em>.</p>
+  </main>
+
+  <footer role="contentinfo">
+    openpricing.org is part of the Pebble group of companies
+  </footer>
+</body>
+</html>
